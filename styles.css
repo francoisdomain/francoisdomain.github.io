@@ -34,6 +34,7 @@ header {
     background-color: #222221;
     font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
     color: #F5F5DC; /* Deep Burgundy for titles */
+    font-size: 1rm;
 }
 
 /* Header Titles */
