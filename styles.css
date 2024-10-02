@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #228B22; /* Forest green */
+    color: #F5F5DC; /* Off white */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #228B22;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {
+    margin-right: 15px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector label, select {
+    color: #F5F5DC;
+    margin-left: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Bio Section */
+.bio-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bio-image img {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.bio-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Latest Novel Section */
+.latest-novel img {
+    display: block;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-form button {
+    background-color: #F5F5DC;
+    color: #228B22;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d4d4b1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .latest-novel img {
+        max-width: 100%;
+    }
+
+    .contact-form input, .contact-form textarea {
+        max-width: 100%;
+    }
+}
