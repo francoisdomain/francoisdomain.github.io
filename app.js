@@ -25,3 +25,25 @@ function switchLanguage(lang) {
 document.getElementById('languageSwitcher').addEventListener('change', (e) => {
     switchLanguage(e.target.value);
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the form from refreshing the page
+    const form = e.target;
+
+    // Send form data via AJAX
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            form.reset();
+            document.getElementById('confirmationMessage').style.display = 'block';
+        } else {
+            alert("There was an issue submitting the form. Please try again.");
+        }
+    });
+});
