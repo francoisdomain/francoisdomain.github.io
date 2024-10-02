@@ -1,10 +1,27 @@
+/* Color Palet
+
+Page Background:
+Charcoal Gray (#2C2C2C)
+
+Highlight for Header and Titles:
+Deep Burgundy (#611427): 
+
+Links:
+Muted Cyan (#5BC0EB): 
+
+Decoration (Separators):
+Warm Gray (#A29F9F): 
+
+*/
+
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #228B22; /* Forest green */
-    color: #F5F5DC; /* Off white */
-    margin: 0;
+    font-family: 'Merriweather', serif; /* Use Merriweather for body text */
+    background-color: #dcdad7; /* Charcoal Gray */
+    color: #F5F5DC; /* Off White text */
+    margin: 0 auto; /* Center the content */
     padding: 0;
+    max-width: 1000px; /* Limit the width */
 }
 
 /* Header Styles */
@@ -12,8 +29,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #228B22;
+    padding: 0px 15px 0px 15px;
+    background-color: #222221;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
+    color: #F5F5DC; /* Deep Burgundy for titles */
+}
+
+/* Header Titles */
+ h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
+    color: #611427; /* Deep Burgundy for titles */
+}
+
+/* Links */
+a {
+    color: #5BC0EB; /* Muted Cyan for links */
+    text-decoration: none;
+}
+
+/* Decorative Separators */
+hr {
+    border: 1px solid #A29F9F; /* Warm Gray for separators */
 }
 
 .logo-name {
@@ -30,9 +66,19 @@ header {
     align-items: center;
 }
 
-.language-selector label, select {
+.language-selector label {
     color: #F5F5DC;
     margin-left: 10px;
+   
+}
+
+.language-selector  select {
+    color: #F5F5DC;
+    margin-left: 10px;
+    background-color: #222221;
+    padding: 10px 0px 5px 0px;
+    border: 0px;
+    font-size: 1.5rem;
 }
 
 /* Section Styles */
