@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author profile of François, showcasing biography, latest novel, and contact form.">
+    <meta name="keywords" content="François, author, novel, biography, contact">
+    <meta name="author" content="François">
+    <title>François - Author Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <h1>François</h1>
+        </div>
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="bio-section">
+        <div class="bio-image">
+            <img src="https://via.placeholder.com/200" alt="Author Picture">
+        </div>
+        <div class="bio-text">
+            <h2 data-translate="about">About François</h2>
+            <p data-translate="bio">François is an accomplished author known for his evocative prose and captivating storytelling. His work often delves into the complexities of human emotion...</p>
+        </div>
+    </section>
+
+    <section class="latest-novel">
+        <h2 data-translate="latest_novel">Latest Novel: "Above the Waterline"</h2>
+        <p data-translate="novel_description">"Above the Waterline" is François' most recent novel, exploring themes of love, loss, and the blurred lines between fantasy and reality...</p>
+        <img src="https://via.placeholder.com/300" alt="Book Cover">
+    </section>
+
+    <section class="contact-form">
+        <h2 data-translate="contact">Contact François</h2>
+        <form id="contactForm" action="https://example.com/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 François. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
