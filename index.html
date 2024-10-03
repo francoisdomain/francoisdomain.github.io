@@ -12,47 +12,49 @@
     
 </head>
 <body>
-    <header>
-        <div class="logo-name">
-            <img src="https://via.placeholder.com/50" alt="Logo">
-            <h1>Francois Domain</h1>
-        </div>
-        <div class="language-selector">
-            
-            <select id="languageSwitcher">
+        <header>
+        <div class="header-content">
+            <h1>François</h1>
+            <div class="language-selector">
+                <select id="languageSwitcher">
                 <option value="en">🇺🇸</option>
                 <option value="fr">🇫🇷</option>
                 <option value="en">🇬🇧</option>
             </select>
+            </div>
         </div>
     </header>
 
-    <section class="bio-section">
-        <div class="bio-image">
-            <img src="images/headshot4.jpg" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; overflow: hidden;" alt="Author Picture">
+        <section class="hero">
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/1200x400" alt="Author Banner">
         </div>
-        <div class="bio-text">
-            <h2 data-translate="about">About François</h2>
-            <p data-translate="bio">François is an accomplished author known for his evocative prose and captivating storytelling. His work often delves into the complexities of human emotion...</p>
+        <div class="hero-text">
+            <h2 data-translate="about">Exploring Identity and Dark Humor</h2>
+            <p data-translate="bio">Fiction that pushes the boundaries of stereotypes and the human experience.</p>
         </div>
     </section>
 
-    <section class="latest-novel">
+<section class="biography">
+        <h2>Biography</h2>
+        <p>François is a renowned author whose work explores the nuances of identity, the blurred lines between sexuality stereotypes, and the thrill of the unknown. His work is known for its subtle infusion of dark humor and sarcastic undertones.</p>
+    </section>
+
+    <section class="latest-work">
         <h2 data-translate="latest_novel">Latest Novel: "Above the Waterline"</h2>
-        <p data-translate="novel_description">"Above the Waterline" is François' most recent novel, exploring themes of love, loss, and the blurred lines between fantasy and reality...</p>
-        <img src="https://via.placeholder.com/300" alt="Book Cover">
+        <p  data-translate="novel_description">In François' latest work, "Above the Waterline," he explores themes of love, loss, and the search for identity in an ever-changing world.</p>
+        <img src="https://via.placeholder.com/300x400" alt="Book Cover">
     </section>
 
-
-    <section class="contact-form">
-        <h2 data-translate="contact">Contact François</h2>
-        <form id="contactForm" action="https://formspree.io/f/mgvwgjly" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-</form>
-<p id="confirmationMessage" style="display: none; color: lightgreen;">Thank you! Your message has been sent.</p>
+    
+ <section class="contact-form">
+        <h2>Contact</h2>
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
