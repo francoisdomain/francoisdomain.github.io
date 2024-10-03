@@ -25,6 +25,9 @@
         position: relative;
     }
 
+p {
+    text-align: justify;
+}
 
   header img {
     max-width: 100px;
@@ -116,6 +119,8 @@
   .bio-text p {
     margin-bottom: 20px;
     text-indent: 20px; /* Adjust the value as needed */
+      text-align: justify;
+
   }
 
 
