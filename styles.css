@@ -16,29 +16,15 @@ body {
 /* Header Styles */
 .site-header {
     background-color: #333;
+    text-align: center;
     padding: 20px 0;
     color: white;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.language-selector {
-    display: flex;
-    align-items: center;
-}
-
-.language-selector img {
-    cursor: pointer;
-    margin-left: 10px;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
 .hero-image img {
@@ -53,13 +39,15 @@ body {
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    text-align: center;
     padding: 20px;
 }
 
 /* Section Styles */
-.biography, .latest-work, .contact {
+.biography, .contact {
     padding: 40px 20px;
     background-color: white;
+    margin: 20px 0;
 }
 
 h2 {
@@ -72,10 +60,22 @@ p {
     color: #555;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 /* Footer */
@@ -84,20 +84,4 @@ img {
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
-
-    .hero-text {
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
 }
