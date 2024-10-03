@@ -1,33 +1,23 @@
-/* Color Palet
-
-Page Background:
-Charcoal Gray (#2C2C2C)
-
-Highlight for Header and Titles:
-Deep Burgundy (#611427): 
-
-Links:
-Muted Cyan (#5BC0EB): 
-
-Decoration (Separators):
-Warm Gray (#A29F9F): 
-*/
-
 /* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
-    /*max-width: 1000px;*/ /* Limit the width */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header Styles */
-header {
+.site-header {
     background-color: #333;
+    padding: 20px 0;
     color: white;
-    padding: 10px 20px;
 }
 
 .header-content {
@@ -36,12 +26,19 @@ header {
     align-items: center;
 }
 
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector img {
+    cursor: pointer;
+    margin-left: 10px;
+}
 
 /* Hero Section */
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
 }
 
 .hero-image img {
@@ -55,24 +52,24 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     padding: 20px;
 }
 
 /* Section Styles */
-section {
+.biography, .latest-work, .contact {
     padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
+    background-color: white;
 }
 
 h2 {
+    font-size: 28px;
     color: #333;
-    font-size: 24px;
 }
 
 p {
-    color: #555;
     font-size: 18px;
+    color: #555;
 }
 
 img {
@@ -82,30 +79,25 @@ img {
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
+.site-footer {
     background-color: #333;
     color: white;
-}
-.language-selector {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.language-selector label {
-    color: #F5F5DC;
-    margin-left: 10px;
-   
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
-
-.language-selector  select {
-    color: #F5F5DC;
-    margin-left: 10px;
-    background-color: #222221;
-    padding: 10px 0px 5px 0px;
-    border: 0px;
-    font-size: 1.5rem;
-}
-
-
