@@ -17,8 +17,15 @@
     border-bottom: 2px solid #ddd;
     position: sticky;
       top: 0;
+      }
+      .header-content {
+        display: flex;
+        justify-content: center; /* Center the logo */
+        align-items: center;
+        position: relative;
+    }
 
-  }
+
   header img {
     max-width: 100px;
   }
@@ -34,7 +41,20 @@
     text-decoration: underline;
   }
 
-  .language-selector {
+  .logo {
+    flex-grow: 1;
+    text-align: center; /* Ensures the logo is centered */
+}
+
+/* Language selector aligned to the right */
+.language-selector {
+    position: absolute;
+    right: 0; /* Align it to the right edge of the container */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center it relative to the container */
+}
+
+  .xxxlanguage-selector {
     display: block;
     align-items: right;
   }
