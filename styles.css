@@ -15,6 +15,9 @@
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #ddd;
+    position: sticky;
+      top: 0;
+
   }
   header img {
     max-width: 100px;
@@ -45,7 +48,7 @@
   .language-selector  select {
     color: black;
     background-color: white;
-    padding: 10px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
     border: 0px;
     font-size: 2rem;
   }
@@ -118,6 +121,38 @@
     color: white;
 }
 
+
+/* Contact Form Styles */
+.contact-form {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #d4d4b1;
+  }
+
+
 /* Responsive layout for mobile devices */
 @media (max-width: 768px) {
     .image-text-section {
@@ -127,7 +162,24 @@
     
     .image-container img {
         margin-top: 20px;
+        width: 100px;
+    height: 100px;
+    overflow: hidden;
     }
+
+    .round-image {
+        width: 150px; /* Adjust the size as needed */
+        height: 150px; /* Keep width and height the same for a circular image */
+        border-radius: 50%; /* Creates the circular shape */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+        object-position: 10% 50%; /* Adjust the horizontal and vertical offset */
+        overflow: hidden; /* Ensures that the image stays within the circular container */
+    }
+
+    .language-selector {
+        display: inline;
+        align-items: center;
+      }
 }
 
 
@@ -156,5 +208,9 @@
       float: none;
       display: block;
       margin: 0 auto 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        max-width: 100%;
     }
   }
