@@ -3,62 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Author profile of François, showcasing biography, latest novel, and contact form.">
-    <meta name="keywords" content="François, author, novel, biography, contact">
-    <meta name="author" content="François">
+    <meta name="description" content="François - Fiction Author">
     <title>François - Author Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    
 </head>
 <body>
-        <header>
-        <div class="header-content">
-            <h1>François</h1>
-            <div class="language-selector">
-                <select id="languageSwitcher">
-                <option value="en">🇺🇸</option>
-                <option value="fr">🇫🇷</option>
-                <option value="en">🇬🇧</option>
-            </select>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>François</h1>
+                <div class="language-selector">
+                    <img src="https://www.countryflags.io/gb/flat/32.png" alt="Current Flag" id="currentFlag">
+                    <div class="dropdown">
+                        <ul>
+                            <li><img src="https://www.countryflags.io/us/flat/32.png" alt="US Flag" data-lang="en"></li>
+                            <li><img src="https://www.countryflags.io/fr/flat/32.png" alt="FR Flag" data-lang="fr"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-        <section class="hero">
+    <section class="hero">
         <div class="hero-image">
-            <img src="https://via.placeholder.com/1200x400" alt="Author Banner">
+            <img src="https://via.placeholder.com/1200x400" alt="François Author">
         </div>
         <div class="hero-text">
-            <h2 data-translate="about">Exploring Identity and Dark Humor</h2>
-            <p data-translate="bio">Fiction that pushes the boundaries of stereotypes and the human experience.</p>
+            <h2>Exploring Identity and Dark Humor</h2>
+            <p>Fiction that challenges stereotypes and dives into the human experience.</p>
         </div>
     </section>
 
-<section class="biography">
-        <h2>Biography</h2>
-        <p>François is a renowned author whose work explores the nuances of identity, the blurred lines between sexuality stereotypes, and the thrill of the unknown. His work is known for its subtle infusion of dark humor and sarcastic undertones.</p>
+    <section class="biography">
+        <div class="container">
+            <h2>Biography</h2>
+            <p>François is a writer known for exploring identity, blurred lines between sexuality stereotypes, and incorporating dark humor in his fiction. His stories delve deep into the complexities of the human experience with a subtle but impactful narrative style.</p>
+        </div>
     </section>
 
     <section class="latest-work">
-        <h2 data-translate="latest_novel">Latest Novel: "Above the Waterline"</h2>
-        <p  data-translate="novel_description">In François' latest work, "Above the Waterline," he explores themes of love, loss, and the search for identity in an ever-changing world.</p>
-        <img src="https://via.placeholder.com/300x400" alt="Book Cover">
+        <div class="container">
+            <h2>Latest Novel: "Above the Waterline"</h2>
+            <p>"Above the Waterline" is François' latest novel, which challenges perceptions of love, loss, and the search for identity.</p>
+            <img src="https://via.placeholder.com/300x400" alt="Book Cover">
+        </div>
     </section>
 
-    
- <section class="contact-form">
-        <h2>Contact</h2>
-        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2024 François. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 François. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
