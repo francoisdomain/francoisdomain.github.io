@@ -110,12 +110,17 @@
 /* Styling for the image */
 .image-container img {
     width: 200px;
-    height: 200px;
+    height: auto;
     overflow: hidden;
 }
 
 /* Text container styling */
 .text-container {
+    flex: 1; /* Take up remaining space */
+    font-size: 16px;
+    color: white;
+}
+.text-container2 {
     flex: 1; /* Take up remaining space */
     font-size: 16px;
     color: white;
@@ -158,13 +163,6 @@
     .image-text-section {
         flex-direction: column-reverse; /* Stack the image below the text */
         align-items: center;
-    }
-    
-    .image-container img {
-        margin-top: 20px;
-        width: 100px;
-    height: 100px;
-    overflow: hidden;
     }
 
     .round-image {
