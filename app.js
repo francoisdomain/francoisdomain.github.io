@@ -11,9 +11,9 @@ const translations = {
         close_enough: "Presque Vrai",
         close_enough_desc: "A daring, unflinching dive into the push-pull of unrequited love and self-discovery. Close Enough unravels the intricacies of desire and human connection, punctuated by moments of dark humor and gut-wrenching vulnerability. A compelling read for anyone who’s ever found themselves caught between what they have and what they want.",
         gpf13: "Gunnersbury Park, flat 13",
-        gpf131: "1888. In the foggy depths of West London, a cab comes to a screeching halt. A dark figure steps down, carrying a heavy satchel. The man approaches, hesitantly, toward a gate ravaged by time.",
-        gpf132: "He had stood there, exactly in that spot, six years earlier. When his whole life turned upside down.",
-        gpf133: "If he returns today, it's to understand. To understand what happened, six years earlier, when he crossed the gates of Gunnersbury Park.",
+        gpf131: "1888. In the fog-drenched streets of West London, a cab screeches to a halt. A shadowy figure steps out, burdened by a heavy satchel. With hesitant steps, he approaches a gate weathered by time.",
+        gpf132: "Six years ago, he stood in this very spot—the moment when everything in his life unraveled.",
+        gpf133: "Now, he’s back. Back to Gunnersbury Park, back to the beginning. This time, he seeks answers. What truly happened when he crossed those gates all those years ago?",
         contact: "Contact Francois Domain"
 
     },
@@ -27,7 +27,7 @@ const translations = {
         waterline: "La Glissade",
         waterline_desc: "Après vingt ans de mariage, la vie d'Edward s'effondre lorsque Mathilda lui annonce qu'elle veut divorcer, le plongeant dans un tourbillon de regrets et d'auto-flagellation. Fuyant vers une île isolée, il est contraint de faire face aux parties de lui-même qu'il avait longtemps enfouies — sa peur de voir le temps lui échapper, son incapacité à se détacher d'un amour perdu, et la vérité amère qu'il a toujours été son pire ennemi. Alors qu'une amitié inattendue avec un groupe de jeunes Suédois le distrait momentanément, le véritable combat reste intérieur : une lutte pour comprendre comment il a perdu son chemin et s'il existe encore une chance de retrouver l'homme qu'il avait autrefois espéré devenir.",
         close_enough: "Close Enough",
-        close_enough_desc: "Une plongée audacieuse et sans concession dans les tiraillements de l’amour non partagé et de la quête de soi. PRESQUE VRAI démêle les subtilités du désir et des relations humaines, ponctuées de moments d'humour noir et d'une vulnérabilité à couper le souffle. Une lecture incontournable pour tous ceux qui se sont déjà retrouvés coincés entre ce qu'ils ont et ce qu'ils désirent.",
+        close_enough_desc: "PRESQUE VRAI est une immersion fascinante dans les méandres des désirs inassouvis et la quête de soi. François décortique avec finesse les tensions du désir et des relations humaines, le tout ponctué par une touche d'humour noir qui apporte un souffle inattendu. Entre moments de vulnérabilité touchante et réflexions profondes, ce roman résonne auprès de tous ceux qui ont un jour été déchirés entre ce qu'ils possèdent et ce qu'ils convoitent. Un récit captivant qui pousse à explorer les zones floues entre réalité et désir.",
         gpf13: "Gunnersbury Park, flat 13",
         gpf131: "1888. Dans les brumes de l’Ouest Londonien, un cabriolet s’arrête dans un hennissement furieux. Une silhouette sombre en descend, lourde sacoche à la main. L’homme s’approche, hésitant, d’un portail ravagé par les ans.",
         gpf132: "Il s’était tenu là, exactement, six ans plus tôt. Quand toute sa vie a basculé.",
@@ -63,6 +63,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         if (response.ok) {
             form.reset();
             document.getElementById('confirmationMessage').style.display = 'block';
+            document.getElementById('contactForm').style.display = 'none';
         } else {
             alert("There was an issue submitting the form. Please try again.");
         }
