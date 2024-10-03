@@ -15,52 +15,79 @@ Warm Gray (#A29F9F):
 
 /* Global Styles */
 body {
-    font-family: 'Merriweather', serif; /* Use Merriweather for body text */
-    background-color: #dcdad7; /* Charcoal Gray */
-    color: #F5F5DC; /* Off White text */
-    margin: 0 auto; /* Center the content */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     padding: 0;
-    max-width: 1000px; /* Limit the width */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    /*max-width: 1000px;*/ /* Limit the width */
 }
 
 /* Header Styles */
 header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15px 0px 15px;
-    background-color: #222221;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
-    color: #F5F5DC; /* Deep Burgundy for titles */
-    font-size: 1rm;
 }
 
-/* Header Titles */
- h2, h3 {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
-    color: #611427; /* Deep Burgundy for titles */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-/* Links */
-a {
-    color: #5BC0EB; /* Muted Cyan for links */
-    text-decoration: none;
+.hero-image img {
+    width: 100%;
+    height: auto;
 }
 
-/* Decorative Separators */
-hr {
-    border: 1px solid #A29F9F; /* Warm Gray for separators */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
-.logo-name {
-    display: flex;
-    align-items: center;
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
-.logo-name img {
-    margin-right: 15px;
+h2 {
+    color: #333;
+    font-size: 24px;
 }
 
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
 .language-selector {
     display: flex;
     align-items: center;
@@ -81,78 +108,4 @@ hr {
     font-size: 1.5rem;
 }
 
-/* Section Styles */
-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
-}
 
-/* Bio Section */
-.bio-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.bio-image img {
-    border-radius: 50%;
-    max-width: 200px;
-}
-
-.bio-text {
-    flex: 1;
-    margin-left: 20px;
-}
-
-/* Latest Novel Section */
-.latest-novel img {
-    display: block;
-    max-width: 300px;
-    margin-top: 20px;
-}
-
-/* Contact Form Styles */
-.contact-form {
-    text-align: center;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.contact-form button {
-    background-color: #F5F5DC;
-    color: #228B22;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #d4d4b1;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .bio-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .bio-text {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .latest-novel img {
-        max-width: 100%;
-    }
-
-    .contact-form input, .contact-form textarea {
-        max-width: 100%;
-    }
-}
