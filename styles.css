@@ -1,158 +1,159 @@
-/* Color Palet
-
-Page Background:
-Charcoal Gray (#2C2C2C)
-
-Highlight for Header and Titles:
-Deep Burgundy (#611427): 
-
-Links:
-Muted Cyan (#5BC0EB): 
-
-Decoration (Separators):
-Warm Gray (#A29F9F): 
-*/
-
-/* Global Styles */
-body {
-    font-family: 'Merriweather', serif; /* Use Merriweather for body text */
-    background-color: #dcdad7; /* Charcoal Gray */
-    color: #F5F5DC; /* Off White text */
-    margin: 0 auto; /* Center the content */
+* {
+    margin: 0;
     padding: 0;
-    max-width: 1000px; /* Limit the width */
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px 0px 15px;
-    background-color: #222221;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
-    color: #F5F5DC; /* Deep Burgundy for titles */
-    font-size: 1rm;
-}
-
-/* Header Titles */
- h2, h3 {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for titles and headers */
-    color: #611427; /* Deep Burgundy for titles */
-}
-
-/* Links */
-a {
-    color: #5BC0EB; /* Muted Cyan for links */
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+  header img {
+    max-width: 100px;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav a {
+    color: #333;
     text-decoration: none;
-}
+    margin: 0 10px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
 
-/* Decorative Separators */
-hr {
-    border: 1px solid #A29F9F; /* Warm Gray for separators */
-}
-
-.logo-name {
-    display: flex;
-    align-items: center;
-}
-
-.logo-name img {
-    margin-right: 15px;
-}
-
-.language-selector {
-    display: flex;
-    align-items: center;
-}
-
-.language-selector label {
+  .language-selector {
+    display: block;
+    align-items: right;
+  }
+  
+  .language-selector label {
     color: #F5F5DC;
     margin-left: 10px;
    
-}
-
-.language-selector  select {
-    color: #F5F5DC;
-    margin-left: 10px;
-    background-color: #222221;
+  }
+  
+  .language-selector  select {
+    color: black;
+    background-color: white;
     padding: 10px 0px 5px 0px;
     border: 0px;
-    font-size: 1.5rem;
-}
+    font-size: 2rem;
+  }
 
-/* Section Styles */
-section {
-    padding: 40px 20px;
+  .content {
     max-width: 1200px;
-    margin: auto;
-}
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .section-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .biography, .latest-novel, .new-novel {
+    margin-bottom: 40px;
+  }
 
-/* Bio Section */
-.bio-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.bio-image img {
-    border-radius: 50%;
-    max-width: 200px;
-}
-
-.bio-text {
-    flex: 1;
-    margin-left: 20px;
-}
-
-/* Latest Novel Section */
-.latest-novel img {
-    display: block;
-    max-width: 300px;
-    margin-top: 20px;
-}
-
-/* Contact Form Styles */
-.contact-form {
+  .hero {
+    margin-bottom: 40px;
     text-align: center;
+  }
+
+  .bio-image {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    
+  }
+
+  .round-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Keep width and height the same for a circular image */
+    border-radius: 50%; /* Creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: 10% 50%; /* Adjust the horizontal and vertical offset */
+    overflow: hidden; /* Ensures that the image stays within the circular container */
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
+  .bio-text {
+    overflow: hidden;
+  }
+  .bio-text p {
+    margin-bottom: 20px;
+    text-indent: 20px; /* Adjust the value as needed */
+  }
+
+
+  /* General section styling */
+.image-text-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
     margin: 10px 0;
 }
 
-.contact-form button {
-    background-color: #F5F5DC;
-    color: #228B22;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+/* Styling for the image */
+.image-container img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 }
 
-.contact-form button:hover {
-    background-color: #d4d4b1;
+/* Text container styling */
+.text-container {
+    flex: 1; /* Take up remaining space */
+    font-size: 16px;
+    color: white;
 }
 
-/* Responsive Design */
+/* Responsive layout for mobile devices */
 @media (max-width: 768px) {
-    .bio-section {
-        flex-direction: column;
-        text-align: center;
+    .image-text-section {
+        flex-direction: column-reverse; /* Stack the image below the text */
+        align-items: center;
     }
-
-    .bio-text {
-        margin-left: 0;
+    
+    .image-container img {
         margin-top: 20px;
     }
-
-    .latest-novel img {
-        max-width: 100%;
-    }
-
-    .contact-form input, .contact-form textarea {
-        max-width: 100%;
-    }
 }
+
+
+
+  .novel-image {
+    width: 100%;
+    height: 250px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+  .novel-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .novel-info p {
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .bio-image {
+      float: none;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }

@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Author profile of François, showcasing biography, latest novel, and contact form.">
-    <meta name="keywords" content="François, author, novel, biography, contact">
-    <meta name="author" content="François">
+    <meta name="description" content="François - Fiction Author">
     <title>François - Author Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-    
+  
 </head>
 <body>
-    <header>
-        <div class="logo-name">
-            <img src="https://via.placeholder.com/50" alt="Logo">
-            <h1>Francois Domain</h1>
-        </div>
-        <div class="language-selector">
+
+  <!-- Header Section -->
+  <header>
+    <div>
+    <img src="images/FR_Logo.png" alt="Francois Domain, author">
+</div>
+    <div class="language-selector" style="width: 100%; text-align: right;">
             
-            <select id="languageSwitcher">
-                <option value="en">🇺🇸</option>
-                <option value="fr">🇫🇷</option>
-                <option value="en">🇬🇧</option>
-            </select>
-        </div>
-    </header>
+        <select id="languageSwitcher">
+            <option value="en">🇺🇸</option>
+            <option value="fr">🇫🇷</option>
+            <option value="en">🇬🇧</option>
+        </select>
+    </div>
+  </header>
 
-    <section class="bio-section">
-        <div class="bio-image">
-            <img src="images/headshot4.jpg" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; overflow: hidden;" alt="Author Picture">
-        </div>
-        <div class="bio-text">
-            <h2 data-translate="about">About François</h2>
-            <p data-translate="bio">François is an accomplished author known for his evocative prose and captivating storytelling. His work often delves into the complexities of human emotion...</p>
-        </div>
+  <!-- Main Content Section -->
+  <div class="content">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="bio-image"><img src="images/authPic00.jpg" class="round-image"></div>
+        <h1 class="section-title" style="font-size: 2rem; padding: 10px;">Francois Domain</h1>
+
+      </section>
+
+
+    <!-- Biography Section -->
+    <section class="biography">
+      <h2 class="section-title">Biography</h2>
+      <div class="bio-text">
+            <p data-translate="bio">François Domain is a French-English writer, 50 years old, based in London for over 15 years. His latest work, Above the Waterline, is a brutally honest and heart-wrenching exploration of introspection. In this novel, and throughout his body of work, he delves into the fragility of human relationships, dissecting the inner turmoil of love in collapse. Domain’s style is a unique blend that sits at the crossroads of psychological thriller and detective fiction, yet it is always the characters who take center stage.</p>
+            <p data-translate="bio2">Domain’s writing is driven by a deep passion for identity, self-discovery, and the inner struggles of human nature, themes that permeate all his narratives. His characters often play with the boundaries between love, sexuality, friendship, and everything in between, blurring the lines between stereotypes and a more modern, fluid approach to intimacy and relationships. In exploring these complex dynamics, he aims to challenge traditional conceptions of love and human connection, presenting multifaceted relationships that defy easy categorization.</p>
+            <p data-translate="bio3">In addition to his novels, several of Domain’s short stories have been published in various collections, including La Mèche Rebelle, a biting and incisive piece that imagines, with dark irony, the behind-the-scenes chaos in Boris Johnson’s office during the early days of Brexit.</p>
+            <p data-translate="bio4">Domain approaches his writing with the same methodical precision he applies to his career as a technical architect, constructing his narratives with an almost clinical accuracy. Fascinated by intricate plots, he weaves his stories like a puzzle where timelines intersect and every detail finds its place within the larger whole. This process has become a hallmark of his style: tales where the fragments of the past lock seamlessly into the present, and where each character’s choices echo long after they have been made. The result is a narrative depth that intertwines action with existential reflection, exploring the intersection of human connection and inner conflict, and pushing the boundaries of how love and identity can be portrayed in contemporary fiction.</p>
+            
+          </div>
+      </table>
+      
+      
     </section>
 
-    <section class="latest-novel">
-        <h2 data-translate="latest_novel">Latest Novel: "Above the Waterline"</h2>
-        <p data-translate="novel_description">"Above the Waterline" is François' most recent novel, exploring themes of love, loss, and the blurred lines between fantasy and reality...</p>
-        <img src="https://via.placeholder.com/300" alt="Book Cover">
-    </section>
+    <!-- Coming Soon -->
+     <div style="background-color: #333; padding:20px;">
+        <section class="image-text-section">
+            <div class="image-container">
+                <img src="images/LaGlissade.png" alt="Above the Waterline">
+            </div>
+            <div class="text-container">
+                <h3 data-translate="coming_soon">Coming soon</h3>
+                <h2 data-translate="waterline"><i>Above the Waterline</i></h2>
+                <p data-translate="waterline_desc">After twenty years of marriage, Edward’s life shatters when Mathilda announces she wants a divorce, sending him spiraling into a world of regret and self-recrimination. Fleeing to a remote island, he’s forced to confront the pieces of himself he’s long buried—his fear of time slipping away, his inability to let go of lost love, and the bitter truth that he’s been his own worst enemy. While an unexpected friendship with a group of young Swedes momentarily distracts him, the real battle is internal: a struggle to understand how he lost his way and whether there’s a chance to reclaim the man he once hoped to be.</p>
+            </div>
+        </section>
+</div>
 
+        <!-- Latest Novel Section -->
+        <section class="latest-novel">
+            <h2 class="section-title">Latest Novel</h2>
+            <div class="novel-image"></div>
+            <div class="novel-info">
+              <h3>Title of the Latest Novel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+              <a href="#">Read More</a>
+            </div>
+          </section>
+    
+  </div>
 
-    <section class="contact-form">
-        <h2 data-translate="contact">Contact François</h2>
-        <form id="contactForm" action="https://formspree.io/f/mgvwgjly" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-</form>
-<p id="confirmationMessage" style="display: none; color: lightgreen;">Thank you! Your message has been sent.</p>
-    </section>
-
-    <footer>
-        <p>© 2024 François. All rights reserved.</p>
-    </footer>
-
-    <script src="app.js"></script>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Author Name | All Rights Reserved</p>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
