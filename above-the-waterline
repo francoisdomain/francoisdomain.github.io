@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francois Domain">
+    <meta name="description" content="Francois Domain - Above the waterline">
+    <title>Francois Domain, Above the Waterline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LP1G22XDCJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LP1G22XDCJ');
+</script>
+</head>
+<body>
+
+
+  <!-- Header Section -->
+  <header>
+    <div>
+    <img src="images/FD_LOGO.png" alt="Francois Domain, author" class="logo">
+</div>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    
+    
+
+
+    
+
+    <!-- Waterline-->
+     <div style="background-color: #333; padding:20px;">
+        <section class="image-text-section">
+            <div class="image-container">
+                <img src="images/diogo-brandao-Nhm-3WHitdw-unsplashcopy.jpg" alt="Above the Waterline">
+            </div>
+            <div class="text-container">
+                <h3 data-translate="coming_soon">Coming soon</h3>
+                <h2 data-translate="waterline"  style="margin-bottom: 20px;""><i>Above the Waterline</i></h2>
+                <p data-translate="waterline_desc">After twenty years of marriage, Edward’s life shatters when Mathilda announces she wants a divorce, sending him spiraling into a world of regret and self-recrimination. Fleeing to a remote island, he’s forced to confront the pieces of himself he’s long buried—his fear of time slipping away, his inability to let go of lost love, and the bitter truth that he’s been his own worst enemy. While an unexpected friendship with a group of young Swedes momentarily distracts him, the real battle is internal: a struggle to understand how he lost his way and whether there’s a chance to reclaim the man he once hoped to be.</p>
+            </div>
+        </section>
+</div>
+
+<div style="height: 30px;"></div>
+        <center><hr style="width: 30%"></center>
+         <div style="height: 20px;"></div>
+
+    
+         
+<div style="height: 30px;"></div>
+        <center><hr style="width: 30%"></center>
+         <div style="height: 20px;"></div>
+<!--Contact Form-->
+<center>
+<section class="contact-form">
+    <h2 data-translate="contact">Contact Francois Domain</h2>
+    <form id="contactForm" action="https://formspree.io/f/mgvwgjly" method="POST">
+<input type="text" name="name" placeholder="Your Name" required />
+<input type="email" name="email" placeholder="Your Email" required />
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button>
+</form>
+<h3 id="confirmationMessage" style="display: none;">Thank you! Your message has been sent.</h3>
+</section>
+</center>
+
+        <!-- Latest Novel Section 
+         <div style="height: 30px;"></div>
+        <center><hr style="width: 30%"></center>
+         <div style="height: 20px;"></div>
+         <div>
+        <section class="latest-novel">
+            <h2 class="section-title">Latest Novel</h2>
+            <div class="novel-image"></div>
+            <div class="novel-info">
+              <h3>Title of the Latest Novel</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+              <a href="#">Read More</a>
+            </div>
+          </section>
+    
+  </div>
+  -->
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Francois Domain | All Rights Reserved</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
