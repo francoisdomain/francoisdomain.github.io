@@ -25,6 +25,7 @@
         position: relative;
     }
 
+
 p {
     text-align: justify;
 }
@@ -145,10 +146,76 @@ p {
     font-size: 16px;
     color: white;
 }
+
 .text-container2 {
     flex: 1; /* Take up remaining space */
     font-size: 16px;
     color: white;
+}
+
+.image-container-novel img {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+.text-container-novel {
+    flex: 1; /* Take up remaining space */
+    font-size: 16px;
+    color: black;
+    
+}
+
+
+
+
+
+
+
+/* General section styling */
+.text-image-section-novel2 {
+    display: flex;
+    align-items: self-start;
+    margin: 40px 0;
+    
+    gap: 20px; /* Space between image and text */
+    flex-wrap: wrap; /* Allows text to go under the image if necessary */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Georgia', serif;
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+/* Image styling */
+.image-container-novel2 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some spacing on the right of the image */
+}
+
+/* Text styling */
+.text-container-novel2 p h3 {
+    font-size: 16px;
+    color: #333;
+    clear: both; /* This ensures that text that follows the image does not overlap */
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Georgia', serif;
+    
+}
+
+button {
+
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px ;
+}
+
+button:hover {
+
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px ;
+    background-color: #f8f8f8;
+    cursor: pointer;
 }
 
 
@@ -235,5 +302,23 @@ p {
 
     .contact-form input, .contact-form textarea {
         max-width: 100%;
+    }
+
+    .text-image-section-novel2 {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center image and text */
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Georgia', serif;
+        text-indent: 20px;
+    }
+
+    .image-container-novel2 img {
+        margin-bottom: 20px; /* Add space between image and text */
+        float: none; /* Remove floating on mobile */
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Georgia', serif;
+    }
+
+    .text-container-novel2 p h3 {
+        text-align: center; /* Center the text on mobile */
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Georgia', serif;
     }
   }
