@@ -76,7 +76,7 @@
             <div class="text-container-novel">
                 
                 <h2 style="margin-bottom: 20px;"><i>Above the Waterline</i></h2>
-                <p>Eddie’s life has been defined by inertia—a slow slide into a kind of numbness he barely notices until it’s almost too late. <br>Then comes the bombshell: Mathilda, his wife of twenty years, announces she wants a divorce. <br><br>Thrown into a spiral of regret and disbelief, Eddie flees to a sun-soaked island in the Aegean, hoping to escape the memories that haunt him. But distance doesn’t bring the clarity or relief he expected. Instead, it pulls him deeper into the pain of what he’s lost, forcing him to confront the one person he’s been avoiding for years: himself.</p>
+                <p>Eddie’s life has been defined by inertia—a slow slide into a kind of numbness he barely notices until it’s almost too late. <br>Then comes the bombshell: Mathilda, his wife of twenty years, announces she wants a divorce. <br>Thrown into a spiral of regret and disbelief, Eddie flees to a sun-soaked island in the Aegean, hoping to escape the memories that haunt him. But distance doesn’t bring the clarity or relief he expected. Instead, it pulls him deeper into the pain of what he’s lost, forcing him to confront the one person he’s been avoiding for years: himself.</p>
 <br><center><hr style="width: 60px;"></center><br>
 <p><b>Above the Waterline</b><i> is a raw, gripping portrait of a man at war with himself. Through a hypnotic narrative that blends sharp introspection and vivid sensory detail, the novel offers readers an unflinching look at the costs of losing oneself—and the uncertain path to finding a way back.</i></p>
 
@@ -211,23 +211,30 @@
 </section>
 </center>
 
-        <!-- Latest Novel Section 
-         <div style="height: 30px;"></div>
-        <center><hr style="width: 30%"></center>
-         <div style="height: 20px;"></div>
-         <div>
-        <section class="latest-novel">
-            <h2 class="section-title">Latest Novel</h2>
-            <div class="novel-image"></div>
-            <div class="novel-info">
-              <h3>Title of the Latest Novel</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-              <a href="#">Read More</a>
-            </div>
-          </section>
-    
+ <!-- Modal Box -->
+<div id="exitModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Literary Agents & Publishers</h2><br>
+    <p>The book poposal and/or full manuscript or <i><b>Above the Waterline</b></i> is available upon request.</p>
+  <br>
+  <!--Contact Form-->
+<center>
+  <section class="contact-form">
+      
+      <form id="contactForm" action="https://formspree.io/f/mgvwgjly" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+  </form>
+  <h3 id="confirmationMessage" style="display: none;">Thank you! Francois will be in touch asap..</h3>
+  </section>
+  </center>
+  
   </div>
-  -->
+</div>
+
 
   <!-- Footer Section -->
   <footer>
@@ -237,3 +244,41 @@
 </body>
 </html>
 
+<script>
+
+// Get the modal element
+var modal = document.getElementById('exitModal');
+
+// Get the <span> element that closes the modal
+var closeButton = document.getElementsByClassName('close')[0];
+
+// Function to show the modal only once per session
+function showModalOnce() {
+    if (!sessionStorage.getItem('modalShown')) {
+        modal.style.display = 'flex'; // Show the modal
+        sessionStorage.setItem('modalShown', 'true'); // Set flag in session storage
+    }
+}
+
+// Show modal on exit intent
+document.addEventListener('mouseout', function(e) {
+    if (!e.toElement && !e.relatedTarget && e.clientY < 10) {
+        showModalOnce();
+    }
+});
+
+// Close the modal when the user clicks on the close button
+closeButton.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// Close the modal when clicking anywhere outside the modal content
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
+
+</script>
