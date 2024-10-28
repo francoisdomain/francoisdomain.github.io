@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3; url=/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Francois Domain">
@@ -247,37 +248,37 @@
 <script>
 
 // Get the modal element
-var modal = document.getElementById('exitModal');
+//var modal = document.getElementById('exitModal');
 
 // Get the <span> element that closes the modal
-var closeButton = document.getElementsByClassName('close')[0];
+//var closeButton = document.getElementsByClassName('close')[0];
 
 // Function to show the modal only once per session
-function showModalOnce() {
-    if (!sessionStorage.getItem('modalShown')) {
-        modal.style.display = 'flex'; // Show the modal
-        sessionStorage.setItem('modalShown', 'true'); // Set flag in session storage
-    }
-}
+//function showModalOnce() {
+//    if (!sessionStorage.getItem('modalShown')) {
+//        modal.style.display = 'flex'; // Show the modal
+//        sessionStorage.setItem('modalShown', 'true'); // Set flag in session storage
+//    }
+//}
 
 // Show modal on exit intent
-document.addEventListener('mouseout', function(e) {
-    if (!e.toElement && !e.relatedTarget && e.clientY < 10) {
-        showModalOnce();
-    }
-});
+//document.addEventListener('mouseout', function(e) {
+//    if (!e.toElement && !e.relatedTarget && e.clientY < 10) {
+//        showModalOnce();
+//    }
+//});
 
 // Close the modal when the user clicks on the close button
-closeButton.onclick = function() {
-    modal.style.display = 'none';
-}
+//closeButton.onclick = function() {
+//    modal.style.display = 'none';
+//}
 
 // Close the modal when clicking anywhere outside the modal content
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
+//window.onclick = function(event) {
+//    if (event.target == modal) {
+//        modal.style.display = 'none';
+//    }
+//}
 
 
 
