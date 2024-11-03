@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="3; url=/" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Francois Domain">
     <meta name="description" content="Francois Domain - Above the waterline">
-    <title>Francois Domain, Above the Waterline</title>
+    <title>Francois Domain, Above the Waterline - La Glissade</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   <!-- Google tag (gtag.js) -->
@@ -58,36 +58,41 @@
     <div  style="display: flex; align-items: center; justify-content: center; height: auto; font-size: 1.5rem; font-weight: 500">Francois
       <a ref="https://www.francoisdomain.com" style="text-decoration: none; cursor: pointer;"><img src="images/FD_LOGO.png" alt="Francois Domain, author" class="logo"></a>Domain
     </div>
+
+    <!-- drop down comes here?-->
+    <div >
+      <a href="javascript:void(0);" class="laguage-flags" onclick="changeLanguage('en-US')">&#x1f1fa;&#x1f1f8;</a>
+      <a href="javascript:void(0);" class="laguage-flags" onclick="changeLanguage('en-GB')">&#x1f1ec;&#x1f1e7;</a>
+      <a href="javascript:void(0);" class="laguage-flags" onclick="changeLanguage('fr-FR')">&#x1f1eb;&#x1f1f7;</a>
+    </div>
+  <!-- drop down comes here?-->
+  
   </header>
 
   <!-- Main Content Section -->
   <div class="content">
-    
-    
-
-
-    
 
     <!-- Waterline-->
      <div style="background-color: #D2B48C; padding:20px;">
         <section class="image-text-section">
             <div class="image-container">
-                <img src="images/above_the_waterline_cover.png" alt="Above the Waterline">
+              <img id="waterlineImgSrc" src="#" alt="Above the Waterline">
             </div>
             <div class="text-container-novel">
                 
-                <h2 style="margin-bottom: 20px;"><i>Above the Waterline</i></h2>
-                <p>Eddie’s life has been defined by inertia—a slow slide into a kind of numbness he barely notices until it’s almost too late. <br>Then comes the bombshell: Mathilda, his wife of twenty years, announces she wants a divorce. <br>Thrown into a spiral of regret and disbelief, Eddie flees to a sun-soaked island in the Aegean, hoping to escape the memories that haunt him. But distance doesn’t bring the clarity or relief he expected. Instead, it pulls him deeper into the pain of what he’s lost, forcing him to confront the one person he’s been avoiding for years: himself.</p>
-<br><center><hr style="width: 60px;"></center><br>
-<p><b>Above the Waterline</b><i> is a raw, gripping portrait of a man at war with himself. Through a hypnotic narrative that blends sharp introspection and vivid sensory detail, the novel offers readers an unflinching look at the costs of losing oneself—and the uncertain path to finding a way back.</i></p>
-
+                <h2 style="margin-bottom: 20px;" id="atw_title"><i>Above the Waterline</i></h2>
+                <p id="atw_summary1">s1</p>
+                <p id="atw_summary2">s2</p>
+                <p id="atw_summary3">s3</p>
+                <center><hr style="width: 60px;"></center><br>
+                <p><i><b><span id="atw_titleb">title</span></b></i><span id="atw_summary4">atw_summary4</span></p>
             </div>
 
         </section>
       </div>
 
         <div style="height: 50px; background-color: white;"></div>
-        <center><h3 class="chapter"><i>Above the Waterline</i> : Prologue</h3></center>
+        <center><h3 class="chapter" id="atw_prologue_00">atw_prologue_00</h3></center>
          <div style="height: 50px;"></div>
 
          <div>
@@ -98,26 +103,25 @@
           <div class="image-container-novel2">
             
               <img src="images/Illustration_PrasoniBeach_png.png" alt="Prasoni Beach">
-              <p>So, this is how it ends.  </p><br><p>
-              A quick chat at the corner of the kitchen table, wedged between the main and dessert, like we were just discussing Aunt Adelaide’s cataract surgery. Only this time, it was my guts getting sliced open.  </p><p>
-              At least you spared me the old “It’s not you, it’s me” cliché. That’s not your style. You’re more the type to say it’s always my fault. On principle. If you could, you’d probably pin Aunt Adelaide’s cataracts on me, too.  </p><p>
-              We made it past seven years—everyone told us that was the tough one.  </p><p>
-              We made it past ten—everyone told us that was the tough one.  </p><p>
-              We made it past fifteen, and by then, no one said anything because they’d all been divorced for years. </p><p>
-              We almost made it to twenty. Funny thing is, we still might. Divorce doesn’t happen overnight. It takes time. Can you imagine? Us signing the papers on our twentieth anniversary. “Happy anniversary, Mathilda. So, which table are you keeping—the living room one or the dining set?”  </p><p></p><p>
+
+              <p id='atw_prologue_01'>atw_prologue_01</p>
+              <p id='atw_prologue_02'>atw_prologue_02</p>
+              <p id='atw_prologue_03'>atw_prologue_03</p>
+              <p id='atw_prologue_04'>atw_prologue_04</p>
+              <p id='atw_prologue_05'>atw_prologue_05</p>
+              <p id='atw_prologue_06'>atw_prologue_06</p>
+              <p id='atw_prologue_07'>atw_prologue_07</p>
               </p><p>
-              I had a good run, didn’t I? All those efforts to keep my head low, tighten my belt—hell, it shows I’ve got willpower, like I needed any more proof. But what’s the point, when you’ve been living my midlife crisis behind my back, pedal to the metal? Straight into a concrete pillar on Storrow Drive. And I’m stuck in the passenger seat, watching it all go down.</p><p>
-              So I sat there, fists clenched under the table, listening to you say it was “for the best,” that we “had good times,” but somehow “lost each other along the way”—and you didn’t even have the decency to look me in the eye. All I could think was how stupid I was for not driving that intern from accounting all the way home.</p><p>
-              The clock on the wall coughs up seconds, one by one. Too loud, but not loud enough to drown out your words.  </p><p>
-              — You’re not saying anything…</p><p>
-              What do you expect me to say, Mathilda? What do you possibly expect me to say? That we can fix this? That we just need to try harder, see a therapist, or take up couples’ yoga? I know you too well. Once you’ve made up your mind—even on the dumbest of ideas—there’s no turning back. You used to go on sex strikes to get your way. Lately, you’ve just resorted to monosyllabic answers and long silences. How long has it been since we last touched each other? Five months? Six?  </p><p>
-              I used to keep track, back in winter.  </p><p>
-              Sure, not everything revolves around sex, but when it stops altogether—what’s left?  </p><p>
-              And I can’t even blame you, not really. It’s partly my fault. No—it’s entirely my fault. After years of being the one to initiate, I got tired of begging for your attention. Once a week, every Sunday, like some pathetic ritual. So, I decided to strike back. Not because I didn’t want you—God, I wanted you—but because I wanted you to want me. I thought I’d give you time, let the desire build up.  </p><p>
-              And then, of course, Netflix became more engaging than I ever could. “Take your time,” I’d say. “Finish your show.” And you took it literally. If I went to bed early, you’d slip in later. And later. Until I eventually just turned off the light. I gave up in my own way, too. Stopped being hurt when I woke up alone. Stopped caring when breakfast was just silence and coffee.  </p><p>
-              So, I’ll take the blame. There’s no sense keeping score now.  </p><p>
-              </p>
-              
+                <p id='atw_prologue_08'>atw_prologue_08</p>
+                <p id='atw_prologue_09'>atw_prologue_09</p>
+                <p id='atw_prologue_10'>atw_prologue_10</p>
+                <p id='atw_prologue_11'>atw_prologue_11</p>
+                <p id='atw_prologue_12'>atw_prologue_12</p>
+                <p id='atw_prologue_13'>atw_prologue_13</p>
+                <p id='atw_prologue_14'>atw_prologue_14</p>
+                <p id='atw_prologue_15'>atw_prologue_15</p>
+                <p id='atw_prologue_16'>atw_prologue_16</p>
+                <p id='atw_prologue_17'>atw_prologue_17</p>
           </div>
       </section>
 
@@ -126,18 +130,17 @@
         <div class="image-container-novel2">
           
             <img src="images/Illustration_MountAtavyros_png.png" alt="Mount Attavyros">
-            <p>— Are you okay, Edward? </p><p>
-            I gripped the edge of the table like a lifeline, swallowing down words I’d never say. Since when did I become Edward to you? I’ve been Eddie since the day we met. I tried to remember when that changed. Like everything else, I guess it just slipped away.  </p><p>
-            — I’m fine. I… I’m fine.  </p><p>
-            I barely recognized my own voice. Maybe it was Edward’s voice. Not Eddie’s.  </p><p>
-            You were already halfway down a list of practicalities I hadn’t even thought about—the joint account, who’d keep the cat (you hate the cat anyway), moving into Arnold’s room until we sorted out what to do with the house.  </p><p>
-            — Wait… What?</p><p>
-            You stiffened, pinching your lips. </p><p> 
-            — Yes, Edward. We’ll have to talk about the house. You know how involved I am in the community. You’re always holed up in your office—what difference does it make to you if you’re here or somewhere else?</p><p>
-            I almost laughed. “Involved in the community.” Unreal. If throwing Tupperware parties twice a month qualifies as community service, I should be glad you never took on climate change or world peace.  </p><p>
-            Looking back, I want to believe you were just clinging to logistics to keep from falling apart emotionally. If so, you were doing a damn good job of it, way better than me.  </p><p>
-            You wanted the car. For the kids. The eldest already has one, and the youngest—he’s eighteen now, when did that happen?—is across the country, living it up. What does he care about the car? You wanted everything and nothing at once. Played your cards like a master magician, flipping hearts into spades so fast I couldn’t keep up. All I could do was sit there, breathless, groping for answers to questions I hadn’t even grasped.  </p>
-           
+            <p id='atw_prologue_18'>atw_prologue_18</p>
+            <p id='atw_prologue_19'>atw_prologue_19</p>
+            <p id='atw_prologue_20'>atw_prologue_20</p>
+            <p id='atw_prologue_21'>atw_prologue_21</p>
+            <p id='atw_prologue_22'>atw_prologue_22</p>
+            <p id='atw_prologue_23'>atw_prologue_23</p>
+            <p id='atw_prologue_24'>atw_prologue_24</p>
+            <p id='atw_prologue_25'>atw_prologue_25</p>
+            <p id='atw_prologue_26'>atw_prologue_26</p>
+            <p id='atw_prologue_27'>atw_prologue_27</p>
+            <p id='atw_prologue_28'>atw_prologue_28</p>
         </div>
     </section>
 
@@ -146,23 +149,20 @@
       <div class="image-container-novel2">
         
           <img src="images/Illustration_OldTown_png.png" alt="Rhodes Old Town">
-          <p>Under the table, my left leg started bouncing. First softly, then harder. It’s my pressure valve. Always has been. I tried to hold it down with my elbow, but it was no use. After two decades, you should’ve known that. You could’ve let me change into my running gear. Running’s the only thing that calms me down. You know that. But in Mathilda’s world, there’s only Mathilda.  </p><p>
-          — You should see someone, you said. I mean, physically. Emotionally.</p><p>
-          Like ordering a pizza. With any luck, DoorDash would drop off the love of my life at my door, still warm.  </p><p>
-          — I’m not there yet, Mathilda.</p><p>
-          You didn’t reply.  </p><p>
-          </p><p>
-          Of course, we should cancel dinner at Mike and Mary-Ann’s. I couldn’t bear another night pretending everything was fine. Or worse, having Mary-Ann play therapist because she read something in Good Housekeeping.  </p><p>
-          Cynical? No, I’m not cynical. I’m just about to implode. My leg’s doing a tap dance under the table, and my nails are carving trenches into my thighs. What do you say, Mathilda? Should we take a break?  </p><p>
-          — Speak, Edward. Say something.</p><p>
-          Believe me, it’s better if I don’t. Because what I’ve got on the tip of my tongue is everything you never wanted to hear. Not today, not ever. But especially not today.  </p><p>
-          You gave me that condescending glare of yours. You should’ve been a teacher—the kind kids hate.  </p><p>
-          — I’m going for a run.</p><p>
-          You mumbled something, but I didn’t bother asking what. I went upstairs to change, almost calm, almost peaceful.  </p><p>
-          </p><p>
-          It’s hot today.  </p><p>
-          There’s a breeze, but it’s hot.</p><p>
-          </p>
+          <p id='atw_prologue_29'>atw_prologue_29</p>
+          <p id='atw_prologue_30'>atw_prologue_30</p>
+          <p id='atw_prologue_31'>atw_prologue_31</p>
+          <p id='atw_prologue_32'>atw_prologue_32</p>
+          <p id='atw_prologue_33'>atw_prologue_33</p>
+          <p id='atw_prologue_34'>atw_prologue_34</p>
+          <p id='atw_prologue_35'>atw_prologue_35</p>
+          <p id='atw_prologue_36'>atw_prologue_36</p>
+          <p id='atw_prologue_37'>atw_prologue_37</p>
+          <p id='atw_prologue_38'>atw_prologue_38</p>
+          <p id='atw_prologue_39'>atw_prologue_39</p>
+          <p id='atw_prologue_40'>atw_prologue_40</p>
+          <p id='atw_prologue_41'>atw_prologue_41</p>
+          <p id='atw_prologue_42'>atw_prologue_42</p>
       </div>
   </section>
 </center></div>
@@ -201,7 +201,7 @@
 <!--Contact Form-->
 <center>
 <section class="contact-form">
-    <h2 data-translate="contact">Contact Francois Domain</h2>
+    <h2 id="contact">Contact Francois Domain</h2>
     <form id="contactForm" action="https://formspree.io/f/mgvwgjly" method="POST">
 <input type="text" name="name" placeholder="Your Name" required />
 <input type="email" name="email" placeholder="Your Email" required />
@@ -241,7 +241,7 @@
   <footer>
     <p>&copy; 2024 Francois Domain | All Rights Reserved</p>
   </footer>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
@@ -282,4 +282,188 @@
 
 
 
+
+
+  const translations = {
+
+      'fr-FR': {
+          atw_title: "La Glissade",
+          atw_titleb: "La Glissade",
+          atw_summary1: "Cette demande de divorce, Édouard ne l’a pas vu venir : vingt ans de vie commune avec Mathilda, deux beaux garçons, plus de hauts que de bas, Édouard peine à digérer la nouvelle. « C’est une phase, se dit-il, une lubie. Ça va lui passer, il lui faut juste un peu de temps, un peu d’espace. »",
+          atw_summary2: "Mais lorsqu’Édouard s’éloigne dans une dernière tentative pour sauver son couple, c’est de l’image dans le miroir qu’il va devoir se rapprocher ; c’est avec lui-même qu’il va devoir régler ses comptes.",
+          atw_summary3: "",
+          atw_summary4: ", un voyage intérieur intime, sans filtre et sans concession ; une lame de fond qui fissure les bleus et les blancs éclatants d’un décor paradisiaque et nous laisse prostré, pantelant sur le sable glacé.",
+          atw_prologue_00: "La Glissade : Prologue",
+
+
+          atw_prologue_01: "Alors, c’est comme ça que ça finit.",
+          atw_prologue_02: "Une conversation rapide au coin de la table de cuisine, entre le fromage et le dessert, comme on parlerait de l’opération de la cataracte de tante Adélaïde sauf que là, c’était mes tripes que le scalpel s’amusait à taillader.",
+          atw_prologue_03: "Tu as eu la délicatesse de m’épargner le bon vieux cliché du c’est pas toi, c’est moi. Ce n’est pas ton style. Toi, tu es plutôt du genre à me dire que tout est ma faute, tout le temps. Par principe. À t’écouter, la cataracte de tante Adélaïde, ça aussi, ça pourrait bien être ma faute.",
+          atw_prologue_04: "On a passé le cap des sept ans. Tout le monde nous a dit que c’était le plus difficile.",
+          atw_prologue_05: "On a passé les dix ans, tout le monde nous a dit que c’était le plus difficile.",
+          atw_prologue_06: "",
+          atw_prologue_07: "On a passé les quinze ans sans que plus personne ne nous dise quoi que ce soit puisqu’ils avaient déjà tous divorcé, et on a bien failli passer les vingt ans. Le comble, c’est qu’on pourrait bien les passer quand même, les vingt ans, malgré tout ça. Ça n’arrive pas dans un claquement de doigts, un divorce, ça prend du temps. Trop de temps. Tu imagines ? Se retrouver à signer les documents de nos avocats respectifs le jour de nos vingt ans de mariage, ça serait un comble. Bon anniversaire ! Tu gardes la table de salon, ou celle du séjour ?",
+          atw_prologue_08: "Je m’en serais presque bien tiré, tu ne crois pas ? Tous ces efforts surhumains, tous ces serrages de ceintures et ces œillères auto-infligées, c’est bien, ça me prouve que j’ai de la volonté. Comme si j’avais eu besoin de ça pour m’en rendre compte. Et puis ça me fait une belle jambe, tiens, si c’est pour que toi, par-derrière, ce soit toi qui la fasses, ma crise de la quarantaine. Et pas juste un petit dérapage, hein, pas un petit coup d’un soir avec le mécano du coin, non, on y va à fond, là, le tigre dans le moteur, le pied sur le champignon et direction les piliers du pont de l’Alma, histoire de ne pas se louper. Et c’est moi qui suis sur le siège passager.",
+          atw_prologue_09: "Alors je reste assis là, les poings serrés sous la table de la cuisine à t’écouter me raconter que ‘c’est mieux comme ça, qu’on a vécu de bons moments mais qu’à trop se donner d’espace on a fini par se perdre’ sans même avoir la décence de me regarder droit dans les yeux. Et tout ce à quoi je pensais, c’est que j’avais été bien con de ne pas la raccompagner jusque chez elle, la petite stagiaire de la compta.",
+          atw_prologue_10: "L’horloge s’est mise à cracher une seconde tous les jamais. Bruyamment. Tellement bruyamment que je n’arrivais même plus à me concentrer sur ce que tu déblatérais, depuis le fin fond du bout de ta table.",
+          atw_prologue_11: "— Tu ne dis rien…",
+          atw_prologue_12: "Et qu’est-ce que tu voulais que je dise ? Que l’orage va passer, qu’on est plus forts que ça, qu’on a les enfants, qu’on s’aime et qu’il faut savoir rebondir, repartir du bon pied, qu’on allait se parler, aller voir un conseiller conjugal et se mettre au sexe tantrique pour reconnecter nos énergies, comme ils disent dans tes magazines ? Je te connais trop pour ça, Mathilda. Quand tu as décidé d’avoir une idée, aussi conne qu’elle soit, on peut bien te prouver par a plus b que tu as tort, tu nous les fais bouffer matin, midi et soir nos a et nos b jusqu’à ce qu’ils rentrent dans tes cases à toi. Il y a eu un temps, tu savais bien utiliser la grève du sexe, pour ça. Récemment, tu te contentes de me faire la gueule et de me servir une armada de réponses monosyllabiques, au mieux. Parce que ça fait combien, cinq, six mois qu’on n’a pas fait l’amour ? Ni l’amour ni rien d’autre, d’ailleurs. Au moins six mois.",
+          atw_prologue_13: "J’ai arrêté de compter à la fin de l’hiver.",
+          atw_prologue_14: "Je sais bien, tout ne tourne pas autour du sexe et on n’a pas besoin d’être l’un dans l’autre tous les soirs, ce n’est pas ce que je veux dire. Mais quand on ne partage plus ces moments-là, quand il n’y a même plus cette connexion chimique, animale, instinctive, quand on ne se touche plus, quand on ne s’embrasse plus, qu’est-ce qui reste ?",
+          atw_prologue_15: "Je ne peux pas te blâmer pour ça, c’est en partie ma faute. Non, c’est complètement ma faute. Après des années à toujours être celui qui doit faire le premier pas, le premier geste, j’en ai eu assez de quémander ton attention. Faire la manche dans son propre lit une fois par semaine, ça ne fait pas briller l’égo. À mon tour, j’ai eu une idée stupide : j’allais à mon tour faire la grève du sexe. Pas parce que je n’avais pas envie de toi, bien au contraire. J’avais juste envie que tu aies envie de moi. J’allais te laisser le temps, te laisser t’impatienter, laisser le désir grandir au creux de tes reins jusqu’à ce que tu viennes poser une main sur mon torse, jouer avec mon oreille, ou me plaquer contre le mur. J’en frémissais rien qu’à l’idée.",
+          atw_prologue_16: "Mais tes soirées avec Netflix te captivaient plus que les draps de notre lit. Si moi je me couchais plus tôt, toi tu te glissais sous les couvertures de plus en plus tard. Après que j’ai fini par capituler et ai éteint la lampe de chevet. Moi aussi, j’ai baissé les bras. J’ai arrêté d’être déçu de m’endormir seul, arrêté d’être peiné de ne partager mon petit déjeuner qu’avec la télévision, sans le son, pour ne pas te déranger. Ne plus te déranger. ",
+          atw_prologue_17: "Alors tu voix, c’est ‘un partout, la balle au centre’, comme on dit. ",
+
+
+          atw_prologue_18: "— Ça va, Édouard ?",
+          atw_prologue_19: "Ma main s’est agrippée à la table comme à une bouée. Pour me maintenir la tête hors de l’eau. Depuis quand tu m’appelais Édouard ? J’avais toujours été Eddie, pour toi, depuis le premier jour. J’ai beau chercher, je n’arrive plus à retrouver le moment où je suis devenu Édouard. C’est sûrement arrivé progressivement. Comme tout le reste.",
+          atw_prologue_20: "— Ça va. Ça va.",
+          atw_prologue_21: "J’avais peine à reconnaître la voix sortie de ma gorge. C’était peut-être celle d’Édouard, pas celle d’Eddie.",
+          atw_prologue_22: "Tu en étais déjà à passer en revue toute une liste de détails qui ne m’avaient même pas encore effleuré l’esprit : le compte joint, qui garderait le chat – tu n’aimes pas les chats de toute façon – la chambre d’Arnaud dans laquelle tu t’installerais en attendant qu’on prenne une décision pour la maison, la voiture qui–",
+          atw_prologue_23: "— Pardon ?",
+          atw_prologue_24: "Tu t’es redressée en pinçant les lèvres, comme si tu avais anticipé le coup. ",
+          atw_prologue_25: "— Oui, Édouard. Il va falloir que l’on discute, pour la maison. Ce n’est pas aussi simple qu’il y parait. Tu sais à quel point je suis impliquée dans la communauté. Toi, tu es toujours enfermé dans ton bureau, que tu sois ici ou ailleurs, ça ne fait pas grande différence, n’est-ce pas ?",
+          atw_prologue_26: "Heureusement que tu as enchaîné sur les mensualités de la police d’assurance que tu acceptais avec toute la grandeur d’âme qui te caractérise que je continue à payer sinon je t’aurais ri au nez. Impliquée dans la communauté. On aura tout entendu. Si t’impliquer dans la communauté, c’est organiser des soirées Tupperware deux fois par mois, c’est sûrement une bonne chose que tu n’aies pas pris à cœur de t’impliquer dans les conflits au Moyen-Orient ou le réchauffement climatique.",
+          atw_prologue_27: "Avec le recul, je veux essayer de me faire croire que c’était pour te détacher de l’émotionnel que tu t’attardais tant sur le matériel. Si c’est ça, alors tu avais une sacrée longueur d’avance sur moi.",
+          atw_prologue_28: "Tu voulais la voiture. Pour les enfants. Le grand conduit et à la sienne. Quant au petit – il a dix-huit ans, il faut que j’arrête de l’appeler le petit – il est de l’autre côté de la Manche, bien happy dans son underground et n’a aucune envie de revenir ne serait-ce que pour le week-end, encore moins pour les vacances alors, la voiture, qu’est-ce qu’il doit bien s’en foutre.",
+
+
+          atw_prologue_29: "Sous la table, ma jambe gauche trouvait que j’avais fait preuve d’assez de patience et que le moment était venu de t’envoyer bouler. Elle a commencé à taper du talon, doucement d’abord, et puis en y mettant plus de cœur. C’est ma soupape de sécurité. Le signal du coup d’envoi. Je pouvais bien essayer de la maîtriser, poser mon coude sur ma cuisse pour tenter d’arrêter ce sautillement insupportable, la bataille était perdue d’avance. Et si on se connait aussi bien qu’on veut le prétendre après toutes ces années de mariage, tu aurais dû le savoir, tu aurais dû me laisser aller enfiler un short, des baskets, et aller courir. Il n’y a que ça qui me calme. Ce n’est pas nouveau, ce n’est pas compliqué à comprendre, mais non, dans le monde de Mathilda, il n’a que Mathilda qui existe.",
+          atw_prologue_30: "— Tu devrais voir quelqu’un. Physiquement, je veux dire. Sentimentalement.",
+          atw_prologue_31: "J’oubliais que trouver la nouvelle femme de sa vie, c’était aussi facile que de commander une pizza. Avec un peu de chance, Deliveroo te la dépose directement sur le palier encore toute chaude.",
+          atw_prologue_32: "— Je n’en suis pas encore là, Mathilda.",
+          atw_prologue_33: "Tu n’as pas répondu, je n’ai pas voulu le remarquer.",
+          atw_prologue_34: "Michel et Anne-Marie ? Oui, oui, bien sûr qu’il fallait décommander. Je ne me voyais pas passer une soirée de plus avec tes amis à prétendre que tout va bien ou, pire, à laisser Anne-Marie nous faire une psychothérapie express en suivant les bons conseils trouvés dans un vieux Femme Actuelle. ",
+          atw_prologue_35: "Cynique ? Non, je ne suis pas cynique, je suis juste à deux doigts d’imploser. J’ai la jambe qui fait des sauts périlleux dignes des Jeux olympiques, mes ongles sont en train de creuser les tranchées de la guerre 14 dans mes cuisses, qu’est-ce que tu en dis, on se fait un petit break, là ?",
+          atw_prologue_36: "— Parle, Édouard, enfin ! Dis quelque chose.",
+          atw_prologue_37: "Crois-moi, Mathilda, il valait mieux que je me taise. Ce qui pendait au bout de mes lèvres, là, c’est tout ce que tu ne voulais pas entendre, ni ce jour-là, ni jamais – mais surtout pas ce jour-là.",
+          atw_prologue_38: "Tu as accueilli mon silence de ton air le plus condescendant. Tu aurais dû faire maitresse d’école. De celles que les gosses n’aiment pas.",
+          atw_prologue_39: "— Je vais aller courir.",
+          atw_prologue_40: "Tu as grommelé quelque chose que je ne t’ai pas demandé de répéter. Je suis monté me changer, presque calmement, presque tranquillement.",
+          atw_prologue_41: "Il fait chaud, aujourd’hui.",
+          atw_prologue_42: "Il y a du vent, mais il fait chaud.",
+          waterlineImgSrc: "images/diogo-brandao-Nhm-3WHitdw-unsplashcopy.jpg",
+          contact: "Contacter François Domain"
+      },
+
+      'en-GB': {
+          atw_title: "Above the Waterline",
+          atw_titleb: "Above the Waterline",
+          atw_summary1: "Eddie’s life has been defined by inertia—a slow slide into a kind of numbness he barely notices until it’s almost too late.",
+          atw_summary2: "Then comes the bombshell: Mathilda, his wife of twenty years, announces she wants a divorce.",
+          atw_summary3: "Thrown into a spiral of regret and disbelief, Eddie flees to a sun-soaked island in the Aegean, hoping to escape the memories that haunt him. But distance doesn’t bring the clarity or relief he expected. Instead, it pulls him deeper into the pain of what he’s lost, forcing him to confront the one person he’s been avoiding for years: himself.",
+          atw_summary4: " is a raw, gripping portrait of a man at war with himself. Through a hypnotic narrative that blends sharp introspection and vivid sensory detail, the novel offers readers an unflinching look at the costs of losing oneself—and the uncertain path to finding a way back.",
+          atw_prologue_00: "Above the Waterline : Prologue",
+
+
+          atw_prologue_01: "So, this is how it ends.",
+          atw_prologue_02: "A quick chat at the corner of the kitchen table, wedged between the main and dessert, like we were just discussing Aunt Adelaide’s cataract surgery. Only this time, it was my guts getting sliced open.",
+          atw_prologue_03: "At least you spared me the old “It’s not you, it’s me” cliché. That’s not your style. You’re more the type to say it’s always my fault. On principle. If you could, you’d probably pin Aunt Adelaide’s cataracts on me, too.",
+          atw_prologue_04: "We made it past seven years—everyone told us that was the tough one.",
+          atw_prologue_05: "We made it past ten—everyone told us that was the tough one.",
+          atw_prologue_06: "We made it past fifteen, and by then, no one said anything because they’d all been divorced for years.",
+          atw_prologue_07: "We almost made it to twenty. Funny thing is, we still might. Divorce doesn’t happen overnight. It takes time. Can you imagine? Us signing the papers on our twentieth anniversary. 'Happy anniversary, Mathilda. So, which table are you keeping—the living room one or the dining set?'",
+          atw_prologue_08: "I had a good run, didn’t I? All those efforts to keep my head low, tighten my belt—hell, it shows I’ve got willpower, like I needed any more proof. But what’s the point, when you’ve been living my midlife crisis behind my back, pedal to the metal? Straight into a concrete pillar on Storrow Drive. And I’m stuck in the passenger seat, watching it all go down.",
+          atw_prologue_09: "So I sat there, fists clenched under the table, listening to you say it was “for the best,” that we “had good times,” but somehow “lost each other along the way”—and you didn’t even have the decency to look me in the eye. All I could think was how stupid I was for not driving that intern from accounting all the way home.",
+          atw_prologue_10: "The clock on the wall coughs up seconds, one by one. Too loud, but not loud enough to drown out your words.",
+          atw_prologue_11: "— You’re not saying anything…",
+          atw_prologue_12: "What do you expect me to say, Mathilda? What do you possibly expect me to say? That we can fix this? That we just need to try harder, see a therapist, or take up couples’ yoga? I know you too well. Once you’ve made up your mind—even on the dumbest of ideas—there’s no turning back. You used to go on sex strikes to get your way. Lately, you’ve just resorted to monosyllabic answers and long silences. How long has it been since we last touched each other? Five months? Six?",
+          atw_prologue_13: "I used to keep track, back in winter.",
+          atw_prologue_14: "Sure, not everything revolves around sex, but when it stops altogether—what’s left?",
+          atw_prologue_15: "And I can’t even blame you, not really. It’s partly my fault. No—it’s entirely my fault. After years of being the one to initiate, I got tired of begging for your attention. Once a week, every Sunday, like some pathetic ritual. So, I decided to strike back. Not because I didn’t want you—God, I wanted you—but because I wanted you to want me. I thought I’d give you time, let the desire build up.",
+          atw_prologue_16: "And then, of course, Netflix became more engaging than I ever could. “Take your time,” I’d say. “Finish your show.” And you took it literally. If I went to bed early, you’d slip in later. And later. Until I eventually just turned off the light. I gave up in my own way, too. Stopped being hurt when I woke up alone. Stopped caring when breakfast was just silence and coffee.",
+          atw_prologue_17: "So, I’ll take the blame. There’s no sense keeping score now.",
+
+
+          atw_prologue_18: "— Are you okay, Edward?",
+          atw_prologue_19: "I gripped the edge of the table like a lifeline, swallowing down words I’d never say. Since when did I become Edward to you? I’ve been Eddie since the day we met. I tried to remember when that changed. Like everything else, I guess it just slipped away.",
+          atw_prologue_20: "— I’m fine. I… I’m fine.",
+          atw_prologue_21: "I barely recognized my own voice. Maybe it was Edward’s voice. Not Eddie’s.",
+          atw_prologue_22: "You were already halfway down a list of practicalities I hadn’t even thought about—the joint account, who’d keep the cat (you hate the cat anyway), moving into Arnold’s room until we sorted out what to do with the house.",
+          atw_prologue_23: "— Wait… What?",
+          atw_prologue_24: "You stiffened, pinching your lips.",
+          atw_prologue_25: "— Yes, Edward. We’ll have to talk about the house. You know how involved I am in the community. You’re always holed up in your office—what difference does it make to you if you’re here or somewhere else?",
+          atw_prologue_26: "I almost laughed. 'Involved in the community.' Unreal. If throwing Tupperware parties twice a month qualifies as community service, I should be glad you never took on climate change or world peace.",
+          atw_prologue_27: "Looking back, I want to believe you were just clinging to logistics to keep from falling apart emotionally. If so, you were doing a damn good job of it, way better than me.",
+          atw_prologue_28: "You wanted the car. For the kids. The eldest already has one, and the youngest—he’s eighteen now, when did that happen?—is across the country, living it up. What does he care about the car? You wanted everything and nothing at once. Played your cards like a master magician, flipping hearts into spades so fast I couldn’t keep up. All I could do was sit there, breathless, groping for answers to questions I hadn’t even grasped.",
+
+
+          atw_prologue_29: "Under the table, my left leg started bouncing. First softly, then harder. It’s my pressure valve. Always has been. I tried to hold it down with my elbow, but it was no use. After two decades, you should’ve known that. You could’ve let me change into my running gear. Running’s the only thing that calms me down. You know that. But in Mathilda’s world, there’s only Mathilda. ",
+          atw_prologue_30: "— You should see someone, you said. I mean, physically. Emotionally.",
+          atw_prologue_31: "Like ordering a pizza. With any luck, DoorDash would drop off the love of my life at my door, still warm.",
+          atw_prologue_32: "— I’m not there yet, Mathilda.",
+          atw_prologue_33: "You didn’t reply.",
+          atw_prologue_34: "Of course, we should cancel dinner at Mike and Mary-Ann’s. I couldn’t bear another night pretending everything was fine. Or worse, having Mary-Ann play therapist because she read something in Good Housekeeping.",
+          atw_prologue_35: "Cynical? No, I’m not cynical. I’m just about to implode. My leg’s doing a tap dance under the table, and my nails are carving trenches into my thighs. What do you say, Mathilda? Should we take a break?",
+          atw_prologue_36: "— Speak, Edward. Say something.",
+          atw_prologue_37: "Believe me, it’s better if I don’t. Because what I’ve got on the tip of my tongue is everything you never wanted to hear. Not today, not ever. But especially not today.",
+          atw_prologue_38: "You gave me that condescending glare of yours. You should’ve been a teacher—the kind kids hate.",
+          atw_prologue_39: "— I’m going for a run.",
+          atw_prologue_40: "You mumbled something, but I didn’t bother asking what. I went upstairs to change, almost calm, almost peaceful.",
+          atw_prologue_41: "It’s hot today.",
+          atw_prologue_42: "There’s a breeze, but it’s hot.",
+          waterlineImgSrc: "images/above_the_waterline_cover.png",
+          contact: "Contact François Domain"
+      },
+
+      'en-US': {
+          atw_title: "Above the Waterline",
+          atw_titleb: "Above the Waterline",
+          atw_summary1: "Eddie’s life has been defined by inertia—a slow slide into a kind of numbness he barely notices until it’s almost too late.",
+          atw_summary2: "Then comes the bombshell: Mathilda, his wife of twenty years, announces she wants a divorce.",
+          atw_summary3: "Thrown into a spiral of regret and disbelief, Eddie flees to a sun-soaked island in the Aegean, hoping to escape the memories that haunt him. But distance doesn’t bring the clarity or relief he expected. Instead, it pulls him deeper into the pain of what he’s lost, forcing him to confront the one person he’s been avoiding for years: himself.",
+          atw_summary4: " is a raw, gripping portrait of a man at war with himself. Through a hypnotic narrative that blends sharp introspection and vivid sensory detail, the novel offers readers an unflinching look at the costs of losing oneself—and the uncertain path to finding a way back.",
+          atw_prologue_00: "Above the Waterline : Prologue",
+
+
+          atw_prologue_01: "So, this is how it ends.",
+          atw_prologue_02: "A quick chat at the corner of the kitchen table, wedged between the main and dessert, like we were just discussing Aunt Adelaide’s cataract surgery. Only this time, it was my guts getting sliced open.",
+          atw_prologue_03: "At least you spared me the old “It’s not you, it’s me” cliché. That’s not your style. You’re more the type to say it’s always my fault. On principle. If you could, you’d probably pin Aunt Adelaide’s cataracts on me, too.",
+          atw_prologue_04: "We made it past seven years—everyone told us that was the tough one.",
+          atw_prologue_05: "We made it past ten—everyone told us that was the tough one.",
+          atw_prologue_06: "We made it past fifteen, and by then, no one said anything because they’d all been divorced for years.",
+          atw_prologue_07: "We almost made it to twenty. Funny thing is, we still might. Divorce doesn’t happen overnight. It takes time. Can you imagine? Us signing the papers on our twentieth anniversary. 'Happy anniversary, Mathilda. So, which table are you keeping—the living room one or the dining set?'",
+          atw_prologue_08: "I had a good run, didn’t I? All those efforts to keep my head low, tighten my belt—hell, it shows I’ve got willpower, like I needed any more proof. But what’s the point, when you’ve been living my midlife crisis behind my back, pedal to the metal? Straight into a concrete pillar on Storrow Drive. And I’m stuck in the passenger seat, watching it all go down.",
+          atw_prologue_09: "So I sat there, fists clenched under the table, listening to you say it was “for the best,” that we “had good times,” but somehow “lost each other along the way”—and you didn’t even have the decency to look me in the eye. All I could think was how stupid I was for not driving that intern from accounting all the way home.",
+          atw_prologue_10: "The clock on the wall coughs up seconds, one by one. Too loud, but not loud enough to drown out your words.",
+          atw_prologue_11: "— You’re not saying anything…",
+          atw_prologue_12: "What do you expect me to say, Mathilda? What do you possibly expect me to say? That we can fix this? That we just need to try harder, see a therapist, or take up couples’ yoga? I know you too well. Once you’ve made up your mind—even on the dumbest of ideas—there’s no turning back. You used to go on sex strikes to get your way. Lately, you’ve just resorted to monosyllabic answers and long silences. How long has it been since we last touched each other? Five months? Six?",
+          atw_prologue_13: "I used to keep track, back in winter.",
+          atw_prologue_14: "Sure, not everything revolves around sex, but when it stops altogether—what’s left?",
+          atw_prologue_15: "And I can’t even blame you, not really. It’s partly my fault. No—it’s entirely my fault. After years of being the one to initiate, I got tired of begging for your attention. Once a week, every Sunday, like some pathetic ritual. So, I decided to strike back. Not because I didn’t want you—God, I wanted you—but because I wanted you to want me. I thought I’d give you time, let the desire build up.",
+          atw_prologue_16: "And then, of course, Netflix became more engaging than I ever could. “Take your time,” I’d say. “Finish your show.” And you took it literally. If I went to bed early, you’d slip in later. And later. Until I eventually just turned off the light. I gave up in my own way, too. Stopped being hurt when I woke up alone. Stopped caring when breakfast was just silence and coffee.",
+          atw_prologue_17: "So, I’ll take the blame. There’s no sense keeping score now.",
+
+
+          atw_prologue_18: "— Are you okay, Edward?",
+          atw_prologue_19: "I gripped the edge of the table like a lifeline, swallowing down words I’d never say. Since when did I become Edward to you? I’ve been Eddie since the day we met. I tried to remember when that changed. Like everything else, I guess it just slipped away.",
+          atw_prologue_20: "— I’m fine. I… I’m fine.",
+          atw_prologue_21: "I barely recognized my own voice. Maybe it was Edward’s voice. Not Eddie’s.",
+          atw_prologue_22: "You were already halfway down a list of practicalities I hadn’t even thought about—the joint account, who’d keep the cat (you hate the cat anyway), moving into Arnold’s room until we sorted out what to do with the house.",
+          atw_prologue_23: "— Wait… What?",
+          atw_prologue_24: "You stiffened, pinching your lips.",
+          atw_prologue_25: "— Yes, Edward. We’ll have to talk about the house. You know how involved I am in the community. You’re always holed up in your office—what difference does it make to you if you’re here or somewhere else?",
+          atw_prologue_26: "I almost laughed. 'Involved in the community.' Unreal. If throwing Tupperware parties twice a month qualifies as community service, I should be glad you never took on climate change or world peace.",
+          atw_prologue_27: "Looking back, I want to believe you were just clinging to logistics to keep from falling apart emotionally. If so, you were doing a damn good job of it, way better than me.",
+          atw_prologue_28: "You wanted the car. For the kids. The eldest already has one, and the youngest—he’s eighteen now, when did that happen?—is across the country, living it up. What does he care about the car? You wanted everything and nothing at once. Played your cards like a master magician, flipping hearts into spades so fast I couldn’t keep up. All I could do was sit there, breathless, groping for answers to questions I hadn’t even grasped.",
+
+
+          atw_prologue_29: "Under the table, my left leg started bouncing. First softly, then harder. It’s my pressure valve. Always has been. I tried to hold it down with my elbow, but it was no use. After two decades, you should’ve known that. You could’ve let me change into my running gear. Running’s the only thing that calms me down. You know that. But in Mathilda’s world, there’s only Mathilda. ",
+          atw_prologue_30: "— You should see someone, you said. I mean, physically. Emotionally.",
+          atw_prologue_31: "Like ordering a pizza. With any luck, DoorDash would drop off the love of my life at my door, still warm.",
+          atw_prologue_32: "— I’m not there yet, Mathilda.",
+          atw_prologue_33: "You didn’t reply.",
+          atw_prologue_34: "Of course, we should cancel dinner at Mike and Mary-Ann’s. I couldn’t bear another night pretending everything was fine. Or worse, having Mary-Ann play therapist because she read something in Good Housekeeping.",
+          atw_prologue_35: "Cynical? No, I’m not cynical. I’m just about to implode. My leg’s doing a tap dance under the table, and my nails are carving trenches into my thighs. What do you say, Mathilda? Should we take a break?",
+          atw_prologue_36: "— Speak, Edward. Say something.",
+          atw_prologue_37: "Believe me, it’s better if I don’t. Because what I’ve got on the tip of my tongue is everything you never wanted to hear. Not today, not ever. But especially not today.",
+          atw_prologue_38: "You gave me that condescending glare of yours. You should’ve been a teacher—the kind kids hate.",
+          atw_prologue_39: "— I’m going for a run.",
+          atw_prologue_40: "You mumbled something, but I didn’t bother asking what. I went upstairs to change, almost calm, almost peaceful.",
+          atw_prologue_41: "It’s hot today.",
+          atw_prologue_42: "There’s a breeze, but it’s hot.",
+          waterlineImgSrc: "images/above_the_waterline_cover.png",
+          contact: "Contact François Domain"
+      }
+    };
 </script>
